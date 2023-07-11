@@ -4,26 +4,31 @@ let ListOfSignatureCoffee = [
     id: 0,
     price: "60K",
     name: "MACHI JELLY",
-    imgUrl: "/sigImg/sig_sample.jpg",
+    imgUrl: "./sigImg/sig_sample.jpg",
   },
   {
     id: 1,
     price: "55K",
     name: "TONIC ESPRESSO",
-    imgUrl: "/sigImg/sig_sample.jpg",
+    imgUrl: "./sigImg/sig_sample.jpg",
   },
-  { id: 2, price: "60K", name: "EGG COFFEE", imgUrl: "/sigImg/sig_sample.jpg" },
+  {
+    id: 2,
+    price: "60K",
+    name: "EGG COFFEE",
+    imgUrl: "./sigImg/sig_sample.jpg",
+  },
   {
     id: 3,
     price: "55K",
     name: "ORANGE ESPRESSO",
-    imgUrl: "/sigImg/sig_sample.jpg",
+    imgUrl: "./sigImg/sig_sample.jpg",
   },
   {
     id: 4,
     price: "65K",
     name: "CAFE OAT LATTE",
-    imgUrl: "/sigImg/sig_sample.jpg",
+    imgUrl: "./sigImg/sig_sample.jpg",
   },
 ];
 
