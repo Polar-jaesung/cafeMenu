@@ -21,12 +21,12 @@ header {
   }
 
   @include tablet {
-    color: blue;
+    // color: blue;
     font-size: 5rem;
     margin: 3rem 0 17rem;
   }
   @include laptop {
-    color: red;
+    // color: red;
     font-size: 5rem;
     margin: 3rem 0 13rem;
   }

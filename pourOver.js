@@ -4,15 +4,20 @@ let ListOfPourOver = [
     id: 0,
     price: "65K",
     name: "KENYA",
-    imgUrl: "./coffeeImg/1.png",
+    imgUrl: "./sigImg/sig_sample.jpg",
   },
   {
     id: 1,
     price: "65K",
     name: "ETHIOPIA",
-    imgUrl: "./coffeeImg/1.png",
+    imgUrl: "./sigImg/sig_sample.jpg",
   },
-  { id: 2, price: "60K", name: "YELLOW BOURBON", imgUrl: "./coffeeImg/1.png" },
+  {
+    id: 2,
+    price: "60K",
+    name: "YELLOW BOURBON",
+    imgUrl: "./sigImg/sig_sample.jpg",
+  },
 ];
 
 function exportName(data) {

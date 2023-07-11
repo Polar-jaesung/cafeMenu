@@ -20,14 +20,12 @@ header {
 }
 @media (min-width: 720px) and (max-width: 1023px) {
   header {
-    color: blue;
     font-size: 5rem;
     margin: 3rem 0 17rem;
   }
 }
 @media (min-width: 1024px) {
   header {
-    color: red;
     font-size: 5rem;
     margin: 3rem 0 13rem;
   }

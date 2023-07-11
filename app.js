@@ -2,13 +2,23 @@
 
 const menuDetail = document.querySelector(".menu_detail");
 let ListOfClassicCoffee = [
-  { id: 0, price: "45K", name: "ESPRESSO", imgUrl: "./coffeeImg/0.png" },
-  { id: 1, price: "45K", name: "CA PHE SUA", imgUrl: "./coffeeImg/0.png" },
-  { id: 2, price: "45K", name: "BAC XIU", imgUrl: "./coffeeImg/0.png" },
-  { id: 3, price: "49K", name: "AMERICANO", imgUrl: "./coffeeImg/0.png" },
-  { id: 4, price: "55K", name: "LATTE", imgUrl: "./coffeeImg/0.png" },
-  { id: 5, price: "55K", name: "CAPPUCCINO", imgUrl: "./coffeeImg/0.png" },
-  { id: 6, price: "60K", name: "MOCHA", imgUrl: "./coffeeImg/0.png" },
+  { id: 0, price: "45K", name: "ESPRESSO", imgUrl: "./sigImg/sig_sample.jpg" },
+  {
+    id: 1,
+    price: "45K",
+    name: "CA PHE SUA",
+    imgUrl: "./sigImg/sig_sample.jpg",
+  },
+  { id: 2, price: "45K", name: "BAC XIU", imgUrl: "./sigImg/sig_sample.jpg" },
+  { id: 3, price: "49K", name: "AMERICANO", imgUrl: "./sigImg/sig_sample.jpg" },
+  { id: 4, price: "55K", name: "LATTE", imgUrl: "./sigImg/sig_sample.jpg" },
+  {
+    id: 5,
+    price: "55K",
+    name: "CAPPUCCINO",
+    imgUrl: "./sigImg/sig_sample.jpg",
+  },
+  { id: 6, price: "60K", name: "MOCHA", imgUrl: "./sigImg/sig_sample.jpg" },
 ];
 
 function exportName(data) {
