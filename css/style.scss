@@ -1,0 +1,168 @@
+@import "./mixin";
+
+:root {
+  background: linear-gradient(rgb(242, 234, 219), rgb(234, 183, 89));
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  text-align: center;
+  font-weight: 700;
+  color: rgb(111, 104, 75);
+  // background-color: salmon;
+
+  @include mobile {
+    font-size: 3rem;
+    margin: 3rem 0 20rem;
+  }
+
+  @include tablet {
+    color: blue;
+    font-size: 5rem;
+    margin: 3rem 0 17rem;
+  }
+  @include laptop {
+    color: red;
+    font-size: 5rem;
+    margin: 3rem 0 13rem;
+  }
+}
+
+.downdown {
+  position: fixed;
+  animation: down 0.3s ease;
+  background-color: salmon;
+}
+@keyframes down {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.menu_list {
+  // position: fixed;
+  margin-top: 50px;
+  width: 100%;
+  // height: auto;
+  // background: none;
+  @include mobile {
+    top: 12rem;
+    left: 2rem;
+  }
+  @include tablet {
+    top: 13rem;
+    left: 2rem;
+  }
+
+  @include laptop {
+    top: 10.5rem;
+    left: 2rem;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  cursor: pointer;
+  list-style-type: square;
+  display: flex;
+  margin: 0;
+  @include mobile {
+    flex-flow: row wrap;
+  }
+  @include tablet {
+    justify-content: space-around;
+  }
+  @include laptop {
+    justify-content: space-around;
+  }
+}
+
+li {
+  font-weight: 100;
+  @include mobile {
+    width: 50%;
+    margin: 1.2rem 0;
+  }
+
+  @include tablet {
+    width: 25%;
+    margin: 2rem 0;
+  }
+  @include laptop {
+    margin: 2rem 0;
+  }
+}
+
+li:hover {
+  font-weight: 400;
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+}
+
+.highlight {
+  display: inline-block;
+  position: relative;
+}
+.highlight:hover {
+  background: linear-gradient(to top, #ffe400 50%, transparent 50%);
+}
+
+.line {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  margin: 2rem 0;
+  font-weight: 300;
+  @include mobile {
+    font-size: 2rem;
+  }
+
+  @include tablet {
+    font-size: 4rem;
+  }
+}
+
+.line::before {
+  content: "";
+  flex-grow: 1;
+  margin: 0px 16px;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+}
+.line::after {
+  content: "";
+  flex-grow: 1;
+  margin: 0px 16px;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+}
+
+.each_menu {
+  display: flex;
+  margin-bottom: 2rem;
+  img {
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: block;
+    width: 40%;
+  }
+  .desc_side {
+    text-align: center;
+    width: 60%;
+  }
+}
