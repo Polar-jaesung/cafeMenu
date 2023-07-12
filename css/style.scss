@@ -1,7 +1,7 @@
 @import "./mixin";
 
 :root {
-  background: linear-gradient(rgb(242, 234, 219), rgb(234, 183, 89));
+  background: linear-gradient(rgb(242, 234, 219), rgb(218, 147, 16));
   scroll-behavior: smooth;
 }
 
@@ -13,58 +13,25 @@ header {
   text-align: center;
   font-weight: 700;
   color: rgb(111, 104, 75);
-  // background-color: salmon;
 
   @include mobile {
     font-size: 3rem;
-    margin: 3rem 0 20rem;
+    margin: 3rem 0;
   }
 
   @include tablet {
-    // color: blue;
     font-size: 5rem;
-    margin: 3rem 0 17rem;
+    margin: 3rem 0;
   }
   @include laptop {
-    // color: red;
     font-size: 5rem;
-    margin: 3rem 0 13rem;
+    margin: 3rem 0 5rem;
   }
 }
-
-.downdown {
-  position: fixed;
-  animation: down 0.3s ease;
-  background-color: salmon;
-}
-@keyframes down {
-  0% {
-    transform: translateY(-50px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-.menu_list {
-  // position: fixed;
-  margin-top: 50px;
-  width: 100%;
-  // height: auto;
-  // background: none;
-  @include mobile {
-    top: 12rem;
-    left: 2rem;
-  }
-  @include tablet {
-    top: 13rem;
-    left: 2rem;
-  }
-
-  @include laptop {
-    top: 10.5rem;
-    left: 2rem;
-  }
+.hr-dashed {
+  border: 0px;
+  border-top: 5px dashed #75745c5b;
+  padding-bottom: 1rem;
 }
 
 a {
@@ -90,16 +57,20 @@ ul {
 
 li {
   font-weight: 100;
+  font-weight: 300;
   @include mobile {
+    font-size: 1.1rem;
     width: 50%;
     margin: 1.2rem 0;
   }
 
   @include tablet {
+    font-size: 1.4rem;
     width: 25%;
     margin: 2rem 0;
   }
   @include laptop {
+    font-size: 2rem;
     margin: 2rem 0;
   }
 }
@@ -118,6 +89,70 @@ li:hover {
   background: linear-gradient(to top, #ffe400 50%, transparent 50%);
 }
 
+.address {
+  display: flex;
+  justify-content: center;
+  @include mobile {
+    gap: 2rem;
+  }
+  @include tablet {
+    gap: 5rem;
+  }
+
+  @include laptop {
+    gap: 7rem;
+  }
+
+  .icon_google {
+    @include mobile {
+      width: 2.2rem;
+    }
+    @include tablet {
+      width: 3rem;
+    }
+    @include laptop {
+      width: 4rem;
+    }
+  }
+  .icon_jeepgo {
+    @include mobile {
+      width: 7rem;
+      margin-top: 0.4rem;
+    }
+    @include tablet {
+      width: 8.5rem;
+      margin-top: 1rem;
+    }
+    @include laptop {
+      width: 11rem;
+      margin-top: 2rem;
+    }
+  }
+  .icon_trip {
+    @include mobile {
+      width: 3.5rem;
+    }
+    @include tablet {
+      width: 5rem;
+    }
+    @include laptop {
+      width: 7rem;
+    }
+  }
+
+  .icon_ig {
+    @include mobile {
+      width: 3.5rem;
+    }
+    @include tablet {
+      width: 5rem;
+    }
+    @include laptop {
+      width: 7rem;
+    }
+  }
+}
+
 .line {
   display: flex;
   flex-basis: 100%;
@@ -129,6 +164,9 @@ li:hover {
   }
 
   @include tablet {
+    font-size: 4rem;
+  }
+  @include laptop {
     font-size: 4rem;
   }
 }
@@ -155,14 +193,22 @@ li:hover {
 .each_menu {
   display: flex;
   margin-bottom: 2rem;
+  .img_side {
+    margin: 0;
+    width: 50%;
+  }
   img {
     box-sizing: border-box;
     margin: 0 auto;
     display: block;
-    width: 40%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    // box-sizing: border-box;
   }
   .desc_side {
     text-align: center;
-    width: 60%;
+    width: 50%;
+    margin: 0 auto;
   }
 }

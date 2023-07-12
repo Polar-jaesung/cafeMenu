@@ -79,27 +79,3 @@ $(function () {
     $("html, body").animate({ scrollTop: $(this.hash).offset.top }, 300);
   });
 });
-
-function upnav() {
-  document.addEventListener("scroll", onScroll, { passive: true }); //스크롤이벤트
-  let last = 0; //최종 스크롤 위치 시작값은 0
-  const gap = 1; // 마지막위치, 현재위치의 차이를 얼마로 둘 것인가
-  const nav = document.querySelector("nav"); //네비게이션
-  const headerheight = document.querySelector("header").clientHeight; //헤더 높이
-  function onScroll() {
-    const scrollposition = scrollY; //스크롤위치
-    if (Math.abs(last - scrollposition) <= gap)
-      return; //과거스크롤위치와 현재 스크롤위치의 절대값이 갭 이하이면 돌아가기
-    else if (scrollposition > last || scrollposition <= headerheight) {
-      // 스크롤이 내려가거나 헤더높이보다 낮거나 같다면
-      nav.classList.remove("downdown"); // 네비에서 downdown 클래스를 제거
-    } else if (scrollposition < last) {
-      // 스크롤을 내리고 있다면
-      nav.classList.add("downdown"); //네비에서 downdown 클래스를 추가
-    }
-
-    last = scrollposition; // 새롭게 마지막 스크롤위치를 업데이트
-  }
-}
-
-upnav();
